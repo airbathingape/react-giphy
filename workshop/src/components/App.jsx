@@ -16,7 +16,7 @@ const App = () => {
     giphy.search({
       q: keyword,
       rating: 'g',
-      limit: 10
+      limit: 5
     }, (err, res) => {
       setGiIdList(res.data.map((gif) => gif.id));
     });
